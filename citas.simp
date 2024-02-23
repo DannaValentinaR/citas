@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.10" multi-file="no" uid="simp66a8f19216344fdeb3731366c07bec7b" creation-date="02/23/2024 08:28:19">
+  <meta>
+    <name>danna</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlUseCaseDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>3</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-21cfcedd5ed742278921bee2571c111f" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-4f8ef711560e49778e60cda651dffa8a" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p69c89644f8794d2397e28a0a7d952340_310568516" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>02/23/2024 08:29:04</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-usecase" id="pea98aec0381b44749804e88a6c60b734_548814989" name="UseCaseDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>02/23/2024 08:29:09</creation-date>
+          <change-date>02/23/2024 08:29:09</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="ef06dac4a8ce42d68e73070352d57d7c" name="Default" visible="true" enabled="true" locked="false" />
+      </diagram>
+      <diagram type="uml-class" id="pdde3b92135f042b186924143057f72d1_208090445" name="ClassDiagram1" order-index="2" overview-order-index="0" uid="" auto-routed-paths="false" default-line-style="default" view-location="0,17">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>02/23/2024 08:29:31</creation-date>
+          <change-date>02/23/2024 08:30:56</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="3fd32d0b96ef453a97d57bd0aa6a01a8" cid="C001" type="class" name="Medico" owner="b7b7201158d44b64a25f89f74a33d9a5" creator="" creation-date="02/23/2024 08:30:56">
+            <owned-items />
+            <attributes>
+              <attribute id="a01eea651ec584209a889cc99fc07f0fa841" cid="PROP001" name="id" creation-date="02/23/2024 08:31:29" property-ref="c0819cee3b3545f8800ad88d8bdb2027" />
+            </attributes>
+            <operations>
+              <operation id="oa0db3274dcae4290a2256fcf18355beb551" cid="OP001" name="GetId" creation-date="02/23/2024 08:33:51" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>getter</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="oce0592b722cc4d68a376e11b3c9b7141551" cid="OP002" name="SetId" creation-date="02/23/2024 08:33:51" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p05a5fc374c1749289a8f7887d156932b" name="id" type="" type-id="" creation-date="02/23/2024 08:33:51" />
+                </parameters>
+                <stereotypes>
+                  <stereotype>setter</stereotype>
+                </stereotypes>
+              </operation>
+            </operations>
+          </item>
+          <item id="b7b7201158d44b64a25f89f74a33d9a5" cid="PKG001" type="package" name="entities" creator="" creation-date="02/23/2024 08:30:31">
+            <owned-items />
+          </item>
+          <item id="c0819cee3b3545f8800ad88d8bdb2027" cid="PROP001" type="property" name="id" owner="3fd32d0b96ef453a97d57bd0aa6a01a8" creator="" creation-date="02/23/2024 08:31:29" visibility="private">
+            <property />
+          </item>
+        </abstract-items>
+        <layer id="7d6871bf755245a78637f52adcf08916" name="Default" visible="true" enabled="true" locked="false">
+          <item id="b7b7201158d44b64a25f89f74a33d9a5" iid="6d97a17d335b4894a29d185478d5d2c8" creation-date="02/23/2024 08:30:31" order-index="0" type="entity">
+            <layout ax="13" ay="-71" awidth="464" aheight="353" x="13" y="-71" width="464" height="353" expanded="13,-71,464,353" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+          <item id="3fd32d0b96ef453a97d57bd0aa6a01a8" iid="a44e63c951b440da8d5b3aaf4214c1fe" container="b7b7201158d44b64a25f89f74a33d9a5" container-iid="6d97a17d335b4894a29d185478d5d2c8" show-fields="true" creation-date="02/23/2024 08:30:56" order-index="1" type="entity">
+            <layout ax="41" ay="72" awidth="159" aheight="184" x="41" y="72" width="159" height="184" />
+            <classifier />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
