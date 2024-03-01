@@ -2,70 +2,30 @@ package org.ptech.java.citas.entities;
 
 import java.time.LocalDate;
 
-public class Paciente {
-    int id;
-    String nombres;
-    String apellidos;
-    TipoDocumento tipoDocumento;
-    long numeroDocumento;
-    String correoElectronico;
-    long celular;
-    LocalDate fechaNacimientoDate;
-    Double altura;
-    Double peso;
-    TipoSangre tipoSangre;
-    char factorRH;
+import org.ptech.java.citas.entities.enums.TipoDocumento;
+import org.ptech.java.citas.entities.enums.TipoSangre;
 
+public class Paciente extends Usuario{
+    
+    private String correoElectronico;
+    private long celular;
+    private LocalDate fechaNacimientoDate;
+    private Double altura;
+    private Double peso;
+    private TipoSangre tipoSangre;
+    private char factorRH;
+    
     public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, long numeroDocumento,
-            String correoElectronico, long celular, LocalDate fechaNacomientoDate, Double altura, Double peso,
+            String correoElectronico, long celular, LocalDate fechaNacimientoDate, Double altura, Double peso,
             TipoSangre tipoSangre, char factorRH) {
-        this.id = id;
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.tipoDocumento = tipoDocumento;
-        this.numeroDocumento = numeroDocumento;
+        super(id, nombres, apellidos, tipoDocumento, numeroDocumento);
         this.correoElectronico = correoElectronico;
         this.celular = celular;
-        this.fechaNacimientoDate = fechaNacomientoDate;
+        this.fechaNacimientoDate = fechaNacimientoDate;
         this.altura = altura;
         this.peso = peso;
         this.tipoSangre = tipoSangre;
         this.factorRH = factorRH;
-
-
-        
-    }
-
-    public String getNombres() {
-        return nombres;
-    }
-
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    public TipoDocumento getTipoDocumento() {
-        return tipoDocumento;
-    }
-
-    public void setTipoDocumento(TipoDocumento tipoDocumento) {
-        this.tipoDocumento = tipoDocumento;
-    }
-
-    public long getNumeroDocumento() {
-        return numeroDocumento;
-    }
-
-    public void setNumeroDocumento(long numeroDocumento) {
-        this.numeroDocumento = numeroDocumento;
     }
 
     public String getCorreoElectronico() {
@@ -84,7 +44,7 @@ public class Paciente {
         this.celular = celular;
     }
 
-    public LocalDate getFechaNacomientoDate() {
+    public LocalDate getFechaNacimientoDate() {
         return fechaNacimientoDate;
     }
 
@@ -124,6 +84,4 @@ public class Paciente {
         this.factorRH = factorRH;
     }
 
-
-    
 }
