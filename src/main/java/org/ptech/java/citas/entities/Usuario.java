@@ -6,12 +6,21 @@ import org.ptech.java.citas.entities.enums.TipoDocumento;
 //clase maestra
 //superclase
 //clase base
-public abstract class Usuario {
+public class Usuario {
     protected int id;
     protected String nombres;
     protected String apellidos;
     protected TipoDocumento tipoDocumento;
     protected long numeroDocumento;
+
+    
+     @Override
+    public String toString() {
+        return "Usuario [id=" + id + ", nombres=" + nombres + ", apellidos=" + apellidos + ", tipoDocumento="
+                + tipoDocumento + ", numeroDocumento=" + numeroDocumento + "]";
+    }
+
+     
     
     public Usuario(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, long numeroDocumento) {
         this.id = id;

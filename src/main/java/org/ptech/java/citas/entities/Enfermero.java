@@ -10,6 +10,13 @@ public class Enfermero extends Usuario{
 
 private List<String> procedimientos;
 
+@Override
+public String toString() {
+    return "Enfermero [procedimientos=" + procedimientos + "]";
+}
+
+
+
     public Enfermero(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, long numeroDocumento) {
 
         super(id, nombres, apellidos, tipoDocumento, numeroDocumento);
