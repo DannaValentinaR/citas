@@ -4,20 +4,20 @@ import org.ptech.java.citas.interfaces.IAgendable;
 
 import java.time.LocalDateTime;
 
-public class citaMedico extends Cita implements IAgendable{
+public class CitaEnfermero extends Cita implements IAgendable{
 
-    Medico medico;
+    Enfermero enfermero;
     EstadoCita estado;
-     public citaMedico(int id, LocalDateTime fecha, Consultorio consultorio, Paciente paciente, Medico medico, EstadoCita estado) {
+    public CitaEnfermero(int id, LocalDateTime fecha, Consultorio consultorio, Paciente paciente , Enfermero enfermero, EstadoCita estado){
         super(id, fecha, consultorio, paciente);
+        this.enfermero = enfermero;
         this.estado = EstadoCita.AGENDADA;
     }
-
-    public Medico getMedico() {
-        return medico;
+    public Enfermero getEnfermero() {
+        return enfermero;
     }
-    public void setMedico(Medico medico) {
-        this.medico = medico;
+    public void setEnfermero(Enfermero enfermero) {
+        this.enfermero = enfermero;
     }
     public EstadoCita getEstado() {
         return estado;
@@ -46,6 +46,4 @@ public class citaMedico extends Cita implements IAgendable{
          return true;      
     }
 
-
-    }
-     
+}

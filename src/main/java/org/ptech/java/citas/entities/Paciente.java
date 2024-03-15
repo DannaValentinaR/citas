@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import org.ptech.java.citas.entities.enums.TipoDocumento;
 import org.ptech.java.citas.entities.enums.TipoSangre;
+import org.ptech.java.citas.entities.enums.Motivo;
 
 public class Paciente extends Usuario{
     
@@ -14,6 +15,7 @@ public class Paciente extends Usuario{
     private Double peso;
     private TipoSangre tipoSangre;
     private char factorRH;
+    private Motivo motivo;
 
 
     
@@ -27,7 +29,7 @@ public class Paciente extends Usuario{
 
     public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, long numeroDocumento,
             String correoElectronico, long celular, LocalDate fechaNacimientoDate, Double altura, Double peso,
-            TipoSangre tipoSangre, char factorRH) {
+            TipoSangre tipoSangre, char factorRH, Motivo motivo) {
         super(id, nombres, apellidos, tipoDocumento, numeroDocumento);
         this.correoElectronico = correoElectronico;
         this.celular = celular;
@@ -36,6 +38,7 @@ public class Paciente extends Usuario{
         this.peso = peso;
         this.tipoSangre = tipoSangre;
         this.factorRH = factorRH;
+        this.motivo = motivo;
     }
 
     public String getCorreoElectronico() {
@@ -94,4 +97,14 @@ public class Paciente extends Usuario{
         this.factorRH = factorRH;
     }
 
+
+    public Motivo getMotivo() {
+        return motivo;
+    }
+
+
+    public void setMotivo(Motivo motivo) {
+        this.motivo = motivo;
+    }
+    
 }
